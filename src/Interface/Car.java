@@ -1,6 +1,6 @@
 package Interface;
 
-public class Car implements Engine,Brake {
+public class Car implements Engine,Media,Brake {
 
     @Override
     public void brake() {
@@ -24,4 +24,6 @@ public class Car implements Engine,Brake {
         System.out.println("Speed up the car");
 
     }
+
+
 }
