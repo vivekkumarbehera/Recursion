@@ -3,7 +3,7 @@ package Generic;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LowerBoundExample {
+public class LowerBoundExample {//here there we can the write operation
     private static List<? super Integer> Integers;
 
     public static void addNumber(List<? super Integer>list){
