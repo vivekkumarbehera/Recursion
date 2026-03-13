@@ -16,10 +16,40 @@ public class Single_LinkList {
         }
         size += 1;
     }
+    public void insertLast(int val){
+        if(tail == null){
+            insertFirst(val);
+            return;
+        }
+        node node = new node(val);
+        tail.next=node;
+        tail=node;
+        size++;
+
+    }
+    public void insert(int val , int index){
+        if(index == 0){
+            insertFirst(val);
+            return;
+        }
+        if (index == size){
+            insertLast(val);
+            return;
+        }
+        node temp = head;
+        for (int i = 0; i <index ; i++) {
+            temp= temp.next;
+        }
+        node node= new node(val,temp.next);
+        temp.next = node;
+        size++;
+    }
+
+
     public void display(){
         node temp = head;
         while(temp != null){
-            System.out.print(temp.value);
+            System.out.print(temp.value + " ->  ");
             temp=temp.next;
         }
         System.out.println("END");
