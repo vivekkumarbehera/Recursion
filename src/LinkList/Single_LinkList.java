@@ -44,6 +44,19 @@ public class Single_LinkList {
         temp.next = node;
         size++;
     }
+    public int firstvaluerempove(){
+        int value= head.value;
+        head=head.next;
+        if(head==null){
+            tail=null;
+        }
+        size--;
+        return  value;
+    }
+
+
+
+
 
 
     public void display(){
