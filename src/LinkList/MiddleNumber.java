@@ -56,10 +56,6 @@ public class MiddleNumber {
         return slow; // slow will be at the middle
     }
 
-
-
-
-
     private    class Listnode
 {
 private  int value;
