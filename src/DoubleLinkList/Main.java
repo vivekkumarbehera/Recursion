@@ -9,6 +9,6 @@ public class Main {
         list.insertNode(4);
         list.insertNode(5);
 
-       list.Disp();
+       list.RevDisp();
     }
 }
