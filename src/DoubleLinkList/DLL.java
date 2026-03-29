@@ -1,7 +1,7 @@
 package DoubleLinkList;
 
 public class DLL {
-    Node head;
+   private Node head;
     public void insertNode(int val) {
         Node node = new Node(val);
         node.next = head;
@@ -13,7 +13,11 @@ public class DLL {
     }
     public void Disp(){
         Node node = head ;
-        while
+        while(node != null){
+            System.out.print(node.value+" ->");
+            node = node.next;
+        }
+        System.out.println("End");
     }
    private class Node{
         int value;
