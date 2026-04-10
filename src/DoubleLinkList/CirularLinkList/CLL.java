@@ -28,6 +28,41 @@ public class CLL {
             System.out.println("HEAD");
         }
     }
+    public void delete(int val) {
+        if (head == null) {
+            return; // empty list
+        }
+
+        // Case 1: deleting head
+        if (head.val == val) {
+            if (head == tail) {
+                // only one node
+                head = null;
+                tail = null;
+                return;
+            }
+            head = head.next;
+            tail.next = head; // maintain circular link
+            return;
+        }
+
+        // Case 2: deleting non-head node
+        node current = head;
+        node prev = null;
+        do {
+            prev = current;
+            current = current.next;
+
+            if (current.val == val) {
+                prev.next = current.next;
+                if (current == tail) {
+                    tail = prev; // update tail if needed
+                }
+                return;
+            }
+        } while (current != head);
+    }
+
 
     private class node{
          int val;
