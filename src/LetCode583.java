@@ -1,5 +1,5 @@
 /*public class LetCode583 {
-    public static void main(String[] args) {
+    public static void Main(String[] args) {
         System.out.println(minDistance("abc","mbc"));
 
     }

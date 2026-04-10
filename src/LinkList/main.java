@@ -13,6 +13,6 @@ public class main {
         l2.insertFirst(2);
         l2.insertFirst(3);
         l2.insertFirst(4);
-        l2.Rev();
+   //     l2.Rev();
     }
 }

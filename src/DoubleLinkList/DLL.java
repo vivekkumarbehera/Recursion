@@ -62,4 +62,4 @@ public class DLL {
             this.prev = prev;
         }
     }
-}give me the binnary so
+}
