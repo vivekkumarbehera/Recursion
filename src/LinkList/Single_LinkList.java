@@ -53,6 +53,35 @@ public class Single_LinkList {
         size--;
         return  value;
     }
+    public node reverseRecursive(node head){
+        if(head==null || head.next==null){
+            return head;
+        }
+      node newhead=  reverseRecursive(head.next);
+      head.next.next=head;
+      head.next=null;
+      return newhead;
+
+
+
+
+    }
+    public void insertion(int val,int index){
+      head=insertion(val,index,head);
+    }
+    private node insertion(int val,int index,node node)
+    {
+        if(index == 0){
+            node temp = new node(val,node);
+            size ++;
+            return temp;
+
+
+        }
+        node.next = insertion(val,index--,node.next);
+        return  node;
+    }
+
 
 
 
