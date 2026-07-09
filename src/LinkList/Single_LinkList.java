@@ -20,6 +20,7 @@ public class Single_LinkList {
         if(tail == null){
             insertFirst(val);
             return;
+
         }
         node node = new node(val);
         tail.next=node;
@@ -81,13 +82,6 @@ public class Single_LinkList {
         node.next = insertion(val,index--,node.next);
         return  node;
     }
-
-
-
-
-
-
-
     public void display(){
         node temp = head;
         while(temp != null){
@@ -108,6 +102,7 @@ public class Single_LinkList {
             this.next = next;
         }
         public node(int value){
+
             this.value=value;
         }
     }
